@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<title>Murdoch Online Portal Setting Page</title>
+	</head>
+	
+	<header>
+		<body>
+		
+		<a href="homepage.html"> <!-- Logo image link to homepage -->
+		<center><img src="images\murdochlogo.png" alt="logo" width="100" height="50" ></center><!-- Logo -->
+		</a>	
+	</header>
+	
+	<nav>
+		<div class="search-bar">	
+		<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+		<input name="sitesearch" type="hidden" value="">
+		<input autocomplete="on" class="form-control search" name="q" placeholder="Search..." required="required"  type="text">
+		<button class="button" type="submit">Submit</button>
+		</form>
+			
+		<ul>
+		<li><a class ="" href="homepage.html">Homepage</a></li>
+		<li><a class ="" href="SPE.html">SPE</a></li>
+		<li><a class ="" href="ContactPage.html">Contact-Us</a></li>
+		<li><a class ="current" href="Setting.html">Account/Profile Setting</a></li>
+		<li><a class ="" href="loginpage.html">Log-Out</a></li>
+		</ul>
+	</nav>
+	
+	<div class="setting-header">
+		<h1>Account Setting</h1>
+	</div>
+
+<content>
+	<form class ="setting-page" action="setting.php" method="POST">
+		<p>Full-Name</p>
+		<input class="setting-input" type="text" name="Name" placeholder="Enter Full Name" />
+		<p>Email</p>
+		<input class="setting-input" type="email" name="Email" placeholder="Enter Email" />
+		<p>New Password</p>
+		<input class="setting-input" type="password" name="UserPassword" placeholder="Enter New Password" />
+		
+		<button class="setting-button-cancel" type="Reset" value="Reset">Cancel</button>
+		<button class="setting-button-update" type="Submit" name="update" onclick="updatealert()" value="Submit">Update</button>
+	</form>
+</content>	
+	
+	<footer>
+		<p>copyright &copy; 2022 Murdoch University. All rights reserved</p>
+	</footer>
+	
+	<script>
+	function updatealert()
+	{
+		alert("Account/Profile Updated!.");
+	}
+	</script>
+	
+	</body>
+</html>

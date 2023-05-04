@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<title>Murdoch Online Portal SPE Page</title>
+	</head>
+	
+	<header>
+		<body>
+		<a href="homepage.html"> <!-- Logo image link to homepage -->
+		<center><img src="images\murdochlogo.png" alt="logo" width="100" height="50" ></center><!-- Logo -->
+		</a>	
+	</header>
+		
+	<nav>
+		<div class="search-bar">	
+		<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+		<input name="sitesearch" type="hidden" value="">
+		<input autocomplete="on" class="form-control search" name="q" placeholder="Search..." required="required"  type="text">
+		<button class="button" type="submit">Submit</button>
+		</form>
+			
+		<ul>
+		<li><a class ="" href="homepage.html">Homepage</a></li>
+		<li><a class ="current" href="SPE.html">SPE</a></li>
+		<li><a class ="" href="ContactPage.html">Contact-Us</a></li>
+		<li><a class ="" href="Setting.html">Account/Profile Setting</a></li>
+		<li><a class ="" href="loginpage.html">Log-Out</a></li>
+		</ul>
+	</nav>
+	
+	<div class="SPE-header">
+		<h1>SPE Form</h1>
+	</div>
+	
+	<content>
+		<div class="spepage-content">
+		<form action= "" class="speform" method ="get">
+		  <div class="header-text">
+            <h2 id="header_1" class="form-header" data-component="header">
+				Self and Peer Evaluation Form
+			</h2>
+			</div>
+		<div id="question" class ="question">
+			<label class="form-label" >Q1. How do you rate the contribution of yourself? </label>
+			<br><br>
+			<input type="radio" id="q1" name="rating1" value="1">
+  			<label for="html">1</label>
+			<input type="radio" id="q1" name="rating1" value="1">
+  			<label for="html">2</label>
+			<input type="radio" id="q1" name="rating1" value="1">
+  			<label for="html">3</label>
+			<input type="radio" id="q1" name="rating1" value="1">
+  			<label for="html">4</label>
+			<input type="radio" id="q1" name="rating1" value="1">
+  			<label for="html">5</label>
+			<br><br><br>
+			<label class="form-label2">Q2. How do you rate the yourself in teamwork and communication?</label>
+			<br><br>
+			<input type="radio" id="q2" name="rating2" value="1">
+  			<label for="html">1</label>
+			<input type="radio" id="q2" name="rating2" value="1">
+  			<label for="html">2</label>
+			<input type="radio" id="q2" name="rating2" value="1">
+  			<label for="html">3</label>
+			<input type="radio" id="q2" name="rating2" value="1">
+  			<label for="html">4</label>
+			<input type="radio" id="q2" name="rating2" value="1">
+  			<label for="html">5</label>
+			<br><br><br>
+			<label class="form-label3">Q3. How do you rate the contribution of this student? </label>
+			<br><br>
+			<input type="radio" id="q3" name="rating3" value="1">
+  			<label for="html">1</label>
+			<input type="radio" id="q3" name="rating3" value="1">
+  			<label for="html">2</label>
+			<input type="radio" id="q3" name="rating3" value="1">
+  			<label for="html">3</label>
+			<input type="radio" id="q3" name="rating3" value="1">
+  			<label for="html">4</label>
+			<input type="radio" id="q3" name="rating3" value="1">
+  			<label for="html">5</label>
+			<br><br><br>
+			<label class="form-label4">Q4. How do you rate the student in teamwork and communication? </label>
+			<br><br>
+			<input type="radio" id="q4" name="rating4" value="1">
+  			<label for="html">1</label>
+			<input type="radio" id="q4" name="rating4" value="1">
+  			<label for="html">2</label>
+			<input type="radio" id="q4" name="rating4" value="1">
+  			<label for="html">3</label>
+			<input type="radio" id="q4" name="rating4" value="1">
+  			<label for="html">4</label>
+			<input type="radio" id="q4" name="rating4" value="1">
+  			<label for="html">5</label>
+			<br><br><br>
+			<label class="form-label5">Q5. Any Comment or Evaluation about the student? </label>
+			<br>
+			<textarea rows="6" cols="60" name="comment" form="useform" placeholder="Enter Text Here"></textarea>
+			<br><br>
+			<label class="form-label6">Q6. Any Comment or Evaluation about yourself? </label>
+			<br>
+			<textarea rows="6" cols="60" name="comment" form="useform" placeholder="Enter Text Here"></textarea>
+		</div>
+			<br>
+			
+		<center>
+			<button class="SPE-button" type="button" OnClick="myalert()" value="">Submit</button>
+			<button class="SPE-clear" type="clear" OnClick="myalert2()" value="">Reset</button>
+		</center>
+		
+		</form>
+		</div>
+	
+	</content>
+
+	<footer>
+		<p>copyright &copy; 2022 Murdoch University. All rights reserved</p>
+	</footer>
+		
+		<script>
+			function myalert()
+			{
+				alert("Form is submitted!");
+			}
+			
+			function myalert2()
+			{
+				alert("Form has been clear!");
+			}
+    </script>
+	
+	</body>
+</html>

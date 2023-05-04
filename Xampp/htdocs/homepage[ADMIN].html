@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<title>Murdoch Online Portal Homepage</title>
+	</head>
+	
+	<header>
+		<body>
+		<a href="homepage.html"> <!-- Logo image link to homepage -->
+		<center><img src="images\murdochlogo.png" alt="logo" width="100" height="50" ></center><!-- Logo -->
+		</a>	
+	</header>
+		
+	<nav>
+		<div class="search-bar">	
+		<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+		<input name="sitesearch" type="hidden" value="">
+		<input autocomplete="on" class="form-control search" name="q" placeholder="Search..." required="required"  type="text">
+		<button class="button" type="submit">Submit</button>
+		</form>
+			
+		<ul>
+		<li><a class ="current" href="homepage[ADMIN].html">Homepage</a></li>
+		<li><a class ="" href="ContactPage[ADMIN].html">Contact-Us</a></li>
+		<li><a class ="" href="Setting[ADMIN].html">Account/Profile Setting</a></li>
+		<li><a class ="" href="UCeditPage.html">Control Panel</a></li>
+		<li><a class ="" href="loginpage.html">Log-Out</a></li>
+		</ul>
+	</nav>
+	
+	
+<div class="slideshow">
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  <img src="images/slideshow01.jpg" style="width:100%">
+		</div>
+	
+		<div class="mySlides fade">
+		  <img src="images/slideshow02.jpg" style="width:100%">
+		</div>
+		
+		<div class="mySlides fade">
+		  <img src="images/slideshow03.jpg" style="width:100%">
+		</div>	
+		
+		<div class="mySlides fade">
+		  <img src="images/slideshow04.jpg" style="width:100%">
+		</div>
+		
+		<div class="mySlides fade">
+		  <img src="images/slideshow05.jpg" style="width:100%">
+		</div>
+		
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span>
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 		  
+		</div>
+	</div>
+</div>
+
+	<content>
+		<div class="SPE-content">
+		<img src="images\spe.png" alt="logo" width="100px" height="100px">
+			<h1>SPE Form</h1>
+			<h2>SPE Survey form for all students.</h2>
+			<br>
+			<p>Completion of this SPE form is compulsory.</p>
+			<p>Student will have to answer all the SPE questions in</p>
+			<p>order to complete this SPE form.</p>
+			<button class ="SPEbutton" type="button" OnClick="" value="go to SPE Page">Begin</button>
+		</div>
+		<div class="weekly-content"> 
+			<img src="images\weekly.png" alt="logo" width="100px" height="100px">
+			<h1>Team Weekly Deliverables</h1>
+			<h2>Student weekly work activity sheets for each
+			team and declarations of student teams
+			deliverables should be upload here.</h2>
+			<br>
+			<p> (By Clicking The Link Below) </p>
+			<button class ="weeklybutton" type="button" OnClick="location.href= 'UploadPage[ADMIN].html'" value="go to Upload Page">Upload Page <i class="arrow right"></i></button>
+		</div>
+	</content>
+	
+	<article>
+	</article>
+	
+	<footer>
+		<p>copyright &copy; 2022 Murdoch University. All rights reserved</p>
+	</footer>
+	
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() 
+		{
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  
+		  function currentDiv(n) 
+		  {
+			showDivs(slideIndex = n);
+		  }
+		  
+		  for (i = 0; i < slides.length; i++) 
+		  {
+			slides[i].style.display = "none";  
+		  }
+		  slideIndex++;
+		  if (slideIndex > slides.length) {slideIndex = 1}    
+		  for (i = 0; i < dots.length; i++) 
+		  {
+			dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		  setTimeout(showSlides, 5000); // Change image every 5 seconds
+		}
+</script>
+	
+	</body>
+</html>

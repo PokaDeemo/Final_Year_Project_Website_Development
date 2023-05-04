@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Murdoch Online Portal Login Page</title>
+</head>
+	
+<style>
+	body 
+	{
+		background-color: black;
+	}
+</style>
+	
+<header>
+	<a href="loginpage.html"> 
+	<center><img src="images\murdochlogo.png" alt="logo" width="100" height="50" ></center><!-- Logo -->
+	</a>	
+</header>
+<body>
+	
+<div class="webpage">
+	<content>
+		<form class="login-page" action="LoginCheck.php" method="post">
+		<div class="logo-only">
+			<h1>Murdoch Online Portal</h1>
+			<img src="images\murdochlogo.png" alt="logo" width="100" height="50" >
+		</div>
+		<div class="login-page-content">
+			<input class="login-page-input" type="text" name="Email" placeholder="Enter Username/Email">
+			<input class="login-page-input" type="password" name="UserPassword" placeholder="Enter Password">
+			<button class="login-page-button-submit" name="submit" onclick="loginalert()" type="submit" value="login">Login</button>
+			<button class="login-page-button-register" type="button" OnClick="location.href= 'RegisterPage.html'" value="go to registration page">Register</button>
+			<div class="login-page-link">
+				<a href="ForgetPasswordPage.html" class="login-page-text">Forget Password?</a>
+			</div>
+		</div>
+		</form>
+	</content>
+</div>
+	
+<footer>
+	<p>copyright &copy; 2022 Murdoch University. All rights reserved</p>
+</footer>
+	<script>
+	function loginalert()
+	{
+		alert("Login Successfully!.");
+	}
+	</script>
+	</body>
+</html>

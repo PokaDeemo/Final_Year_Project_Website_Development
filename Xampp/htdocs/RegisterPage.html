@@ -1,0 +1,57 @@
+<?php
+ include('RegistrationCheck.php');
+?>
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Murdoch Online Portal Account Registration Page</title>
+</head>
+	
+<style>
+	body 
+	{
+		background-color: black;
+	}
+</style>
+	
+<header>
+	<a href="loginpage.html"> 
+	<center><img src="images\murdochlogo.png" alt="logo" width="100" height="50" ></center><!-- Logo -->
+	</a>	
+</header>
+<body>
+	
+<div class="webpage">
+	<content>
+		<form action="RegistrationCheck.php" class="registration-page" method="post">
+		<div class="logo-only">
+			<h1>Murdoch Registration Page</h1>
+			<img src="images\murdochlogo.png" alt="logo" width="100" height="50" >
+		</div>
+		<div class="registration-content">
+			<label for="Name" >Name</label>
+			<input class="registration-input" type="text" name="Name" placeholder="Enter Name" />
+			<label for="Email" >Email</label>
+			<input class="registration-input" type="text" name="Email" placeholder="Enter Email" />
+			<label for="password">Password</label>
+			<input class="registration-input" type="password" name="UserPassword" placeholder="Enter Password" />	
+			<button class="registration-button-register" type="submit" name="save" onclick="RegisterAlert()" value="Submit">Register</button>
+			<button class="registration-button-clear" type="reset" id="reset" value="reset">Clear Fields</button>
+		</div>
+		</form>
+	</content>
+</div>	
+<footer>
+	<p>copyright &copy; 2022 Murdoch University. All rights reserved</p>
+</footer>
+
+	<script>
+	function RegisterAlert()
+	{
+		alert("Registration Completed!");
+	}
+	</script>
+	
+	</body>
+</html>

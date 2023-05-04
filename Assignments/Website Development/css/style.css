@@ -1,0 +1,1163 @@
+/* Home-Page CSS-Styling */
+/* Styling for Header */
+header
+{
+	background-color: black;
+	width: auto;
+	height: 10%;
+	
+}
+
+header img
+{
+	padding-top:30px;
+	
+}
+/* End of Styling for Header */
+
+ /* styling for side navigations */
+nav
+{
+  float: right;
+  height: 1100px;
+  font-style: none;
+  list-style-type: none;
+  background-color: #f5f3f4;
+  border-left: solid 1px black;
+  margin: 0 auto;
+}
+
+nav ul 
+{
+	padding-top: 100px;
+	list-style-type: none;
+}
+
+nav li a
+{
+  padding: 5px 10px 15px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  font-family: arial;
+}
+
+nav a:hover /* when the navigation got hover-over it will change the colors */
+{
+  background-color: #c60710;
+  opacity: 0.5;
+  font-size: 20px;
+  color: white;
+}
+
+nav div
+{
+	padding-top: 100px;
+	padding-left: 8px;
+}
+
+nav .search-bar input[type=text] 
+{
+  float: left;
+  padding: 8px;
+  margin-top: 8px;
+  font-size: 15px;
+  border: none;
+}
+
+nav .search-bar button 
+{
+  float: left;
+  padding: 6px;
+  margin-top: 8px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+nav .search-bar button:hover 
+{
+  background: #62899b;
+}
+
+nav .current 
+{
+	background-color: #606060;
+	background: rgba(0,0,0.5,0.6);
+	color: white;
+}
+
+/* styling for footer */
+footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+footer a 
+{
+	color: white;
+}
+
+
+/* Login-Page CSS-Styling */
+.webpage 
+{
+	padding-top:100px;
+}
+
+/* Slideshow Styling */
+.slideshow 
+{
+	padding-top: 10px;
+	background-color: #b0273c;
+	border: solid 1px black;
+	margin: 0 auto;
+}
+
+.slideshow-container 
+{
+  max-width: 50%;
+  position: relative;
+  padding-right: 250px;
+  margin: 0 auto;
+}
+
+.dot 
+{
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active 
+{
+  background-color: #717171;
+}
+
+.fade 
+{
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade 
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade 
+{
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) 
+{
+  .text {font-size: 11px}
+}
+/* End Of SlideShow Styling */
+
+/* Homepage Content Styling */
+.SPE-content 
+{
+	padding-top: 50px;
+	background-color: #f5f3f4;
+	width: 800px;
+	height: 500px;
+	line-height: 1.5em;
+	float: left;
+	border-top: solid 3px black;
+	border-right: solid 2px #f5f3f4;
+	margin:0 auto;
+}
+
+.SPE-content img
+{
+	display: inline-block;
+	float: left;
+	padding-left: 20px;
+}
+
+.SPE-content h1
+{
+	color: #606060;
+	font-family:Verdana;
+	font-size: 35px;
+	text-decoration: underline;
+	margin-left: 150px;
+}
+
+.SPE-content h2
+{
+	color: #606060;
+	font-family:Verdana;
+	font-size: 25px;
+	margin-left: 150px;	
+}
+
+.SPE-content p 
+{
+	color: #c60710;
+	font-style: italic;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 20px;
+	margin-left: 150px;
+}
+
+.SPEbutton
+{
+	padding: 15px 40px 15px 40px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #2E8BC0;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 350px;
+}
+
+.SPEbutton:active 
+{
+    background: black;
+}
+
+.weekly-content 
+{
+	padding-top: 50px;
+	background-color: #f5f3f4;
+	width: 800px;
+	height: 500px;
+	line-height: 1.5em;
+	float: right;
+	border-top: solid 3px black;
+	border-left: solid 3px #f5f3f4;
+	margin:0 auto;
+}
+
+.SPE-content img
+{
+	display: inline-block;
+	float: left;
+	padding-left: 20px;
+}
+
+.weekly-content h1
+{
+	color: #2E8BC0;
+	font-family:Verdana;
+	font-size: 35px;
+	text-decoration: underline;
+	margin-left: 180px;
+}
+
+.weekly-content img
+{
+	display: inline-block;
+	float: left;
+	padding-left: 20px;
+}
+
+
+.weekly-content h2
+{
+	color: #606060;
+	font-family:Verdana;
+	font-size: 25px;
+	margin-left: 180px;	
+	line-height: 1.5em;
+}
+
+.weekly-content p 
+{
+	color: #c60710;
+	font-style: italic;
+	font-weight: bold;
+	font-family: arial;
+	font-size: 20px;
+	margin-left: 350px;
+}
+
+.weeklybutton
+{
+	padding: 15px 40px 15px 40px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #2E8BC0;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	font-size: 20px;
+	margin-left: 350px;
+}
+
+.weeklybutton:active 
+{
+    background: black;
+}
+
+.arrow 
+{
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right 
+{
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+/* End Of Homepage Styling */
+
+/* Login-Page Styling */
+.login-page,.login-page * 
+{
+    box-sizing: border-box;
+    font-family: arial;
+}
+.login-page 
+{
+    max-width: 400px;
+	height: 350px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+	background-color: #c60710;
+}
+
+.logo-only 
+{
+    padding: 35px;
+    background: #f5f3f4;
+}
+
+.login-page h1
+{
+	font-family: arial;
+	float: left;
+	margin-right: 10px;
+	font-size: 20px;
+	color: #c60710;
+}
+
+.login-page-content
+{
+	padding: 30px;
+}
+
+.login-page-input 
+{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #dddddd;
+    background: #ffffff;
+    outline: none;
+    transition: border-color 0.5s;
+}
+
+.login-page-input:focus 
+{
+    border-color: black;
+}
+
+.login-page-input::placeholder 
+{
+    color: #aaaaaa;
+}
+
+.login-page-button-submit
+{
+	float: right;
+	padding: 15px 25px 15px 25px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #2E8BC0;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-left:5px;
+}
+
+.login-page-button-register
+{
+	float: right;
+	padding: 15px 25px 15px 25px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #939393;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-right:5px;
+}
+
+.login-page button:active 
+{
+    background: black;
+}
+
+.login-page-link
+{
+	margin-top: 15px;
+}
+
+.login-page-text 
+{
+    font-size: 0.9em;
+    color: white;
+    text-decoration: none;
+}
+/* End Of login-page Styling */
+
+/* Reset Password Page CSS Styling */
+.forgetpassword-page,.forgetpassword-page* 
+{
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.forgetpassword-page 
+{
+    max-width: 450px;
+	height: 450px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+	background-color: #c60710;
+}
+
+.forgetpassword-page h1
+{
+	font-family: arial;
+	float: left;
+	margin-right: 20px;
+	font-size: 20px;
+	color: #c60710;
+}
+
+.ForgetPassword-page-content
+{
+	padding: 30px;
+	height: 100px;
+	padding-left: 10px;
+}
+
+
+.ForgetPassword-page-content p 
+{
+	color: white; 
+	font-family: Verdana;
+	font-size: 15px;
+}
+
+.ForgetPassword-input 
+{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #dddddd;
+    background: #ffffff;
+    outline: none;
+    transition: border-color 0.5s;
+}
+
+.ForgetPassword-input:focus 
+{
+    border-color: black;
+}
+
+.ForgetPassword-input::placeholder 
+{
+    color: #aaaaaa;
+}
+
+.ForgetPassword-button-reset
+{
+	float: right;
+	padding: 15px 25px 15px 25px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #2E8BC0;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-left:5px;
+}
+
+.ForgetPassword-button-clear
+{
+	float: right;
+	padding: 15px 25px 15px 25px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #939393;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-right:5px;
+}
+
+.forgetpassword-page button:active 
+{
+    background: black;
+}
+/* End Of reset-password Styling */
+
+/* Registration Page CSS Styling */
+.registration-page,.registration-page* 
+{
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.registration-page 
+{
+    max-width: 450px;
+	height: 530px;
+    margin: 0 auto;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+	background-color: #c60710;
+}
+
+.registration-page h1
+{
+	font-family: arial;
+	float: left;
+	margin-right: 15px;
+	font-size: 20px;
+	color: #c60710;
+}
+
+.registration-content
+{
+	padding: 30px;
+	height: 100px;
+	padding-left: 5px;
+}
+
+
+.registration-content p 
+{
+	color: white; 
+	font-family: Verdana;
+	font-size: 15px;
+}
+
+.registration-input 
+{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #dddddd;
+    background: #ffffff;
+    outline: none;
+    transition: border-color 0.5s;
+}
+
+.registration-input:focus 
+{
+    border-color: black;
+}
+
+.ForgetPassword-input::placeholder 
+{
+    color: #aaaaaa;
+}
+
+.registration-button-register
+{
+	float: right;
+	padding: 15px 25px 15px 25px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #2E8BC0;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-left:5px;
+}
+
+.registration-button-clear
+{
+	float: right;
+	padding: 15px 25px 15px 25px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #939393;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-right:5px;
+}
+
+.registration-page button:active 
+{
+    background: black;
+}
+/* End Of registration Styling */
+
+/* Setting-Page CSS Styling */
+.setting-page,.setting-page* 
+{
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+.setting-page 
+{
+    max-width: 700px;
+	height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+	margin: 0 auto;
+}
+
+.setting-header h1
+{
+	font-family: arial;
+	margin-left: 300px;
+	text-align: left;
+	color: #606060;
+}
+
+.setting-page content
+{
+	padding: 30px;
+	height: 100px;
+	padding-left: 5px;
+}
+
+.setting-page p 
+{
+	color: black; 
+	font-family: Verdana;
+	font-size: 20px;
+}
+
+.setting-input 
+{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #dddddd;
+    background: #ffffff;
+    outline: none;
+    transition: border-color 0.5s;
+}
+
+.setting-input:focus 
+{
+    border-color: black;
+}
+
+.setting-input::placeholder 
+{
+    color: #aaaaaa;
+}
+
+.setting-button-update
+{
+	padding: 15px 25px 15px 25px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #2E8BC0;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-left:5px;;
+}
+
+.setting-button-cancel
+{
+	padding: 15px 25px 15px 25px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #939393;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-right:5px;
+}
+
+.setting-page button:active 
+{
+    background: black;
+}
+/* End Of setting-page Styling */
+
+
+/* Contact-Page CSS Styling */
+.contact-header h1
+{
+	font-family: arial;
+	margin-left: 300px;
+	text-align: left;
+	color: #606060;
+}
+
+/* ALERT BUTTON STYLING */
+.reportbutton
+{
+	float: right;
+	padding: 25px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #c60710;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-right:50px;
+	font-size: 15px;
+	font-family: arial;
+}
+
+.modal
+{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.alert-content 
+{
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 30px;
+  border: 2px solid #000000;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.alert-content p
+{
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+	color: red;
+}
+
+.alert-content button 
+{
+	padding: 25px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #c60710;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-right:50px;
+	font-size: 15px;
+	font-family: arial;
+}
+
+.close 
+{
+  color: #aaa;
+  float: right;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.close:hover, .close:focus 
+{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* END OF ALERT BUTTON STYLING */
+
+.contact 
+{
+	background-color: #f5f3f4;
+	height: 800px;
+	width: auto;
+	margin-top: 130px;
+	position: absolute;
+}
+.contact img 
+{
+	filter: drop-shadow(2px 2px 2px #222);
+	width: 50%;
+}
+
+.content-title h1 
+{
+	padding-top: 70px;
+	color: #606060;
+	font-family: Verdana;
+	text-decoration: underline;
+}
+
+.content-title h2
+{
+	color: #c60710;
+	font-family: Verdana;	
+}
+
+.contact p
+{
+	line-height: 2em;
+} 
+
+.content1 
+{
+	float: left;
+	margin-top: 50px;
+	margin-left: 65px;
+}
+
+.content1 h2
+{
+	color: #2E8BC0;
+	font-family: arial;
+	text-decoration: underline;
+}
+
+.content1 p 
+{
+	font-family: arial;
+	margin-right: 50px;
+}
+
+.content2
+{
+	float: right;
+	margin-top: 50px;
+}
+
+.content2 h2
+{
+	color: #2E8BC0;
+	font-family: arial;
+	text-decoration: underline;
+}
+
+.content2 p 
+{
+	font-family: arial;
+	margin-right: 50px;
+}
+/* End Of Contact-Page Styling */
+
+/* Weekly Upload Page Styling */
+.weekly-header h1
+{
+	font-family: arial;
+	margin-left: 300px;
+	text-align: left;
+	color: #606060;
+}
+
+.weekly-upload
+{
+	background-color: #f5f3f4;
+	margin-left: 250px;
+	margin-top: 50px;
+	width: 60%;
+	height: 600px;
+}
+
+.weekly-upload h1
+{
+	font-family: arial;
+	padding-top: 50px;
+	color: #606060;
+	text-decoration: underline;
+}
+
+ .upload-container 
+{
+   position: relative;
+   margin-left: 200px;
+   padding-top: 50px;
+}
+.upload-container input 
+{
+    border: 2px solid #000000;
+    background: #2E8BC0;
+    outline: 2px dashed #FFFFFF;
+    outline-offset: -10px;
+    padding: 100px 0px 100px 250px;
+    text-align: center !important;
+    width: 500px;
+}
+.upload-container input:hover 
+{
+    background: #ddd;
+}
+.upload-container:before 
+ {
+    position: absolute;
+    bottom: 50px;
+    left: 245px;
+    content: " (or) Drag and Drop files here. ";
+	color: #FFFFFF;
+    font-weight: 900;
+}
+
+.upload-btn 
+{
+	padding: 15px 25px 15px 25px;
+	border-radius: 10px;
+	background-color: #2E8BC0;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+    margin-left: 35%;
+}
+
+.delete-btn
+{
+	padding: 15px 25px 15px 25px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #939393;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-right:5px;
+}
+
+.Weekly-Upload button:active 
+{
+    background: black;
+}
+/* END OF Weekly Upload Page Styling */
+
+/* Styling for SPE webpage */
+.SPE-header h1
+{
+	font-family: arial;
+	margin-left: 300px;
+	text-align: left;
+	color: #606060;
+}
+
+.spepage-content 
+{
+	padding-top: 10px;
+	background-color: #f5f3f4;
+	width: 900px;
+	height: auto;
+	line-height: 1.5em;
+	margin:0 auto;
+	padding-bottom: 20px;
+}
+
+.header-text 
+{
+	background: transparent; /* For overriding */
+	border: none; /* For overriding */
+	margin: 12px 36px 18px;
+	border-bottom: 1px solid black;
+	font-family: Arial;
+	color: #606060;
+}
+
+.question
+{
+	padding-left: 50px;
+	font-family: sans-serif;
+}
+
+.SPE-button
+{
+	padding: 15px 25px 15px 25px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #2E8BC0;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-left:5px;
+}
+
+.SPE-clear
+{
+	padding: 15px 25px 15px 25px;
+	border-radius: 10px;
+	margin-top: 10px;
+	background-color: #939393;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-right:5px;
+}
+
+.spepage-content button:active 
+{
+    background: black;
+}
+/* END OF SPE Page Styling */
+
+/* Styling for UC Edit and Review Page */
+.graph-content 
+{
+	padding-top: 10px;
+	padding-left: 20px;
+	background-color: #f5f3f4;
+	width: 765px;
+	height: auto;
+	line-height: 1.5em;
+	float: left;
+	padding-bottom: 20px;
+}
+
+.graph-content h2 
+{
+	font-family: arial;
+	color: #606060;
+	text-decoration: underline;
+}
+
+.graph1
+{
+	padding-left: 50px;
+}
+
+.SPEprogression
+{
+	padding-top: 10px;
+	padding-left: 20px;
+	background-color: #f5f3f4;
+	width: 800px;
+	height: 688px;
+	line-height: 1.5em;
+	float: right;
+	padding-bottom: 20px;
+}
+
+.SPEprogression h2 
+{
+	font-family: arial;
+	color: #606060;
+	text-decoration: underline;
+}
+
+.container 
+{
+  width: 80%;
+  background-color: black;
+}
+
+.skills 
+{
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.complete 
+{
+	width: 45%; 
+	background-color: #2196F3;
+}
+
+.SPEprogression p 
+{
+	background: transparent; /* For overriding */
+	border: none; /* For overriding */
+	font-family: Verdana;
+	color: #606060;
+}
+
+.SPEprogressioncontent 
+{
+	background-color: white;
+	width: auto;
+	height: auto;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+
+.not-complete 
+{
+	width: 55%; 
+	background-color: red;
+}
+
+.download
+{
+	padding: 25px 35px 25px 35px;
+	border-radius: 10px;
+	margin-top: 50px;
+	background-color: #2E8BC0;
+	color: #ffffff;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	font-weight: bold;
+	margin-left:5px;
+	font-size: 20px;
+}
+
+.download-button button:active 
+{
+    background: black;
+}

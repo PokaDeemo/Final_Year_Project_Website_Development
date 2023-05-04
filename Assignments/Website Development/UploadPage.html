@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<title>Murdoch Online Portal Weekly Upload Page</title>
+	</head>
+	
+	<header>
+		<body>
+		<a href="homepage.html"> <!-- Logo image link to homepage -->
+		<center><img src="images\murdochlogo.png" alt="logo" width="100" height="50" ></center><!-- Logo -->
+		</a>	
+	</header>
+		
+	<nav>
+		<div class="search-bar">	
+		<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+		<input name="sitesearch" type="hidden" value="">
+		<input autocomplete="on" class="form-control search" name="q" placeholder="Search..." required="required"  type="text">
+		<button class="button" type="submit">Submit</button>
+		</form>
+			
+		<ul>
+		<li><a class ="" href="homepage.html">Homepage</a></li>
+		<li><a class ="" href="">SPE</a></li>
+		<li><a class ="" href="ContactPage.html">Contact-Us</a></li>
+		<li><a class ="" href="Setting.html">Account/Profile Setting</a></li>
+		<li><a class ="" href="loginpage.html">Log-Out</a></li>
+		</ul>
+	</nav>
+	
+	<div class="weekly-header">
+		<h1>Weekly Deliverable</h1>
+	</div>
+	
+	<content>
+	<div class = "weekly-upload" >
+	<center><h1>Team/Group Weekly Upload</h1></center>
+	<div class="upload-container">
+		<input type="file" id="file_upload" multiple />
+    </div>
+    <br>
+    <button class="upload-btn" onclick="uploadFiles()">Add Submission </button>	
+	<button class="delete-btn" onclick="remove()">Remove Submission</button>	
+	</div>
+	</content>
+	
+	<footer>
+		<p>copyright &copy; 2022 Murdoch University. All rights reserved</p>
+	</footer>
+	
+	<script>
+	function uploadFiles() 
+	{
+        var files = document.getElementById('file_upload').files;
+        if(files.length==0)
+		{
+          alert("Please first choose or drop any file(s)...");
+          return;
+        }
+        var filenames="";
+        for(var i=0;i<files.length;i++)
+		{
+          filenames+=files[i].name+"\n";
+        }
+        alert("Selected file(s) :\n____________________\n"+filenames);
+    }
+	
+	function remove()
+	{
+		var files = document.getElementById('file_upload').files;
+		if(files.length==0)
+		{
+          alert("File Deleted");
+          return;
+        }
+		var filenames="";
+	}
+</script>
+	
+	</body>
+</html>

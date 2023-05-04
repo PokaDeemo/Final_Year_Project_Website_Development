@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/style.css">
+		<title>Murdoch Online Portal Contact Us Page</title>
+	</head>
+	
+	<header>
+		<body>
+		
+		<a href="homepage.html"> <!-- Logo image link to homepage -->
+		<center><img src="images\murdochlogo.png" alt="logo" width="100" height="50" ></center><!-- Logo -->
+		</a>	
+	</header>
+	
+	<nav>
+		<div class="search-bar">	
+		<form action="https://www.google.com/search" class="searchform" method="get" name="searchform" target="_blank">
+		<input name="sitesearch" type="hidden" value="">
+		<input autocomplete="on" class="form-control search" name="q" placeholder="Search..." required="required"  type="text">
+		<button class="button" type="submit">Submit</button>
+		</form>
+			
+		<ul>
+		<li><a class ="" href="homepage.html">Homepage</a></li>
+		<li><a class ="" href="SPE.html">SPE</a></li>
+		<li><a class ="current" href="ContactPage.html">Contact-Us</a></li>
+		<li><a class ="" href="Setting.html">Account/Profile Setting</a></li>
+		<li><a class ="" href="loginpage.html">Log-Out</a></li>
+		</ul>
+	</nav>
+	
+	<div class="contact-header">
+		<h1>Contact Us</h1>
+	</div>
+	
+	<button id="myBtn" class="reportbutton">Report Incidences Button!!!</button>
+	<div id="myModal" class="modal">
+	<div class="alert-content">
+		<span class="close">&times;</span>
+		<p>This button is to alert the Unit Coordinator. Due to conflicts and problems within the team/group only !!!.</p>
+		<center><button class="Alert-Button" type="button" OnClick="" value="">Alert Unit Coordinator</button></center>
+	</div>
+	</div>
+
+<center>
+<div class = "contact">	
+<content>
+	<div class="content-title">
+	<h1>Murdoch Contact Number</h1>
+	<h2>+61-8-9360-6000</h2>
+	</div>
+	<div class="content1">
+	<img src="images\sgmurdoch.jpg">
+	<h2>Murdoch Singapore Office</h2>
+	<p>Phone:+65 6838-0760</p>
+	<p>Address: Kings Centre #03-01, 390 Havelock Road, Singapore 169662</p>
+	<p>Email: MurdochSGP@murdoch.edu.au</p>
+	</div>
+	<div class="content2">
+	<img src="images\aumurdoch.jpg">
+	<h2>Murdoch University Australia</h2>
+	<p>Phone:+08 9360-2731 / +08 9360-7283</p>
+	<p>Address: Murdoch University, 90 South Street, Murdoch WA 6150</p>
+	<p>Email: vetfund@murdoch.edu.au</p>
+	</div>
+</content>	
+</div>
+</center>
+	
+	<footer>
+		<p>copyright &copy; 2022 Murdoch University. All rights reserved</p>
+	</footer>
+	
+	<script>
+		// Get the modal
+		var modal = document.getElementById("myModal");
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks on the button, open the modal
+		btn.onclick = function() 
+		{
+		  modal.style.display = "block";
+		}
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() 
+		{
+		  modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) 
+		{
+		  if (event.target == modal) {
+			modal.style.display = "none";
+		  }
+		}
+	</script>
+	
+	</body>
+</html>
